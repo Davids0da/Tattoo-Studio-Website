@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'PassionOne-Regular';
+    src:url('/fonts/PassionOne-Regular.eot') format('embedded-opentype'), 
+    url('/fonts/PassionOne-Regular.woff') format('woff'), 
+    url('/fonts/PassionOne-Regular.ttf')  format('truetype'),
+    url('/fonts/PassionOne-Regular.svg') format('svg');
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+    color: white;
+}
+
+body {
+    font-family: 'PassionOne-Regular';
+    color: white;
+    letter-spacing: 1px;
+}
+
+#header { 
+    background: url('../images/header.jpg') no-repeat;
+    overflow: hidden;
+}
+#about { 
+    background: url('../images/about.jpg') no-repeat;
+}
+#services { 
+    background: url('../images/services.jpg') no-repeat;
+      position: relative;
+}
+#testimontials { 
+    background: url('../images/testimontials.jpg') no-repeat;
+}
+#artists { 
+    background: url('../images/services.jpg') no-repeat;
+}
+#map { 
+    background: url('../images/services.jpg') no-repeat;
+}
+
+#header , #about , #services , #testimontials , #artists , #map { 
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#social-icons { 
+    position: fixed;
+    left: 0;    
+    top: 42%;
+    z-index: 1000;
+   
+}
+#insta , #face {
+    width: 40px;
+    height: 40px;
+}
+
+#insta {
+    margin-top: 16px;
+}
+
+#navbar {
+    color: white;
+     position: fixed;
+    right: 0;    
+    top: 40%;
+    column-gap: 0;
+    z-index: 1000;
+}
+
+.active::after {
+    content: url('../images/after-focus.png');
+    margin-left: 5px;
+   vertical-align: -12%;
+}
+
+.passive::after {
+     content: url('../images/after-nfocus.png');
+       margin-left: 5px;
+       vertical-align: -12%;
+ 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none ;
+    color:lightgrey;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.language {
+    margin-top: 50px;
+}
+
+.language-frame::after {
+    content: '';
+    border: 2px solid #DB192D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-left: -38px;
+    margin-bottom: -17px;
+}
+
+#language-oposite {
+     padding-top: 13px;
+     display:inline-block ;
+}
+
+
+a:visited {
+    text-decoration: none;
+}
+
+p {
+    color: white;
+}
+
+#title {
+    color: #DB192D;
+    font-size: 35px;
+    margin-top: 250px;
+}
+#title:before  {
+    content: 'SINCE';
+    font-size: 14px;
+    color: white;
+    margin-right: 20px;
+        display: inline-block;
+        vertical-align: 30%;
+}
+#title:after   {
+    content: 'MMXVII';
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: 30%;
+}
+
+.undertitle {
+    color: lightgray;
+    font-style: italic;
+}
+
+#info-box {
+    border-top: 0.5px solid lightgrey;
+       position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.left-info-box {
+      border-right: 0.5px solid lightgrey;
+}
+
+.right-info-box {
+      border-left: 0.5px solid lightgrey;
+}
+
+.color-red {
+    color: #DB192D;
+}
+
+.display-none {
+    visibility: hidden;
+}
+
+.margin-top-info-box {
+    margin-top: 21px;
+}
+.worktime {
+    margin-top: -5px;
+}
+
+#number-margins {
+    margin-top: 1px
+}
+
+#margin-x {
+    margin-top: 1px;
+}
+.margin-top-info-box1 {
+    margin-top: 32px;
+}
+#arabeska {
+    width: 60px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.margin-about {
+    margin-top: 10px;
+}
+
+td {
+    background: green;
+    width: 200px;
+    height: 200px;
+   
+}
+table {
+  border-collapse: separate;
+  border-spacing: 50px 0;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 74px 74px;
+}
+
+.vertical-dots {
+    width: 70px;
+}
+
+#usluge {
+    margin-top: 50px;
+}
+
+#tetovaze {
+    background: url('../images/tetoviranje.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+#tetovaze-school {
+    background: url('../images/skola-tetoviranja.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+#pirsing {
+    background: url('../images/pirsing.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+#trajna {
+    background: url('../images/trajna.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+#solarijum {
+    background: url('../images/solarijum.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+#sminkanje {
+    background: url('../images/sminkanje.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+#dlaka {
+    background: url('../images/dlaka.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+#trepavice {
+    background: url('../images/svilene.jpg') no-repeat; 
+     background-size: 100% auto;
+    background-size: 50% 50% ;
+    background-size: cover;
+    background-size:contain;
+}
+
+.click-box {
+background: #DB192D;
+width: 60px;
+height: 30px;
+padding-top: 8px;
+margin: auto;
+}
+
+.margins {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.display-none {
+    display: none;
+}
+
+#pirs , #teto , #skol , #traj , #sola , #smin , #dlak , #svil{
+    position: absolute;
+    top: 300px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    display:none;
+    
+}
+
+.under-hidden {
+    margin-top: 20px;
+}
+
+.back {
+    width: 30px;
+    margin-top: 40px;
+}
+
+
+.undertitle {
+    margin-top: 18px;
+}
