@@ -1,24 +1,32 @@
 @font-face {
-    font-family: 'PassionOne-Regular';
-    src:url('/fonts/PassionOne-Regular.eot') format('embedded-opentype'), 
-    url('/fonts/PassionOne-Regular.woff') format('woff'), 
-    url('/fonts/PassionOne-Regular.ttf')  format('truetype'),
-    url('/fonts/PassionOne-Regular.svg') format('svg');
+    font-family: Font1;
+    src:url('/fonts/Oswald-Bold.woff') format('woff')
 }
+@font-face {
+    font-family: Font2;
+    src:url('/fonts/OpenSans-LightItalic.woff') format('woff')
+}
+
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
     color: white;
 }
 
 body {
-    font-family: 'PassionOne-Regular';
+    font-family: Font1;
     color: white;
     letter-spacing: 1px;
+    background-color:black;
 }
 
 #header { 
     background: url('../images/header.jpg') no-repeat;
     overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 #about { 
     background: url('../images/about.jpg') no-repeat;
@@ -37,8 +45,8 @@ body {
     background: url('../images/services.jpg') no-repeat;
 }
 
-#header , #about , #services , #testimontials , #artists , #map { 
-    height: 100vh;
+#about , #services , #testimontials , #artists , #map { 
+    height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -115,8 +123,8 @@ a:active {
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-    margin-left: -38px;
-    margin-bottom: -17px;
+    margin-left: -40px;
+    margin-bottom: -15px;
 }
 
 #language-oposite {
@@ -135,8 +143,8 @@ p {
 
 #title {
     color: #DB192D;
-    font-size: 35px;
-    margin-top: 250px;
+    font-size: 30px;
+    margin-top: 200px;
 }
 #title:before  {
     content: 'SINCE';
@@ -158,6 +166,7 @@ p {
 .undertitle {
     color: lightgray;
     font-style: italic;
+    font-family:  Font2;
 }
 
 #info-box {
@@ -167,13 +176,12 @@ p {
     left: 0;
 }
 
-.left-info-box {
-      border-right: 0.5px solid lightgrey;
-}
-
-.right-info-box {
+.center-info-box {
+border-right: 0.5px solid lightgrey;
       border-left: 0.5px solid lightgrey;
 }
+      
+
 
 .color-red {
     color: #DB192D;
@@ -198,7 +206,7 @@ p {
     margin-top: 1px;
 }
 .margin-top-info-box1 {
-    margin-top: 32px;
+    margin-top: 21px;
 }
 #arabeska {
     width: 60px;
@@ -208,23 +216,25 @@ p {
 
 .italic {
     font-style: italic;
+    font-family: Font2;
 }
 
 .margin-about {
     margin-top: 10px;
 }
 
-td {
-    background: green;
-    width: 200px;
-    height: 200px;
+.usluge {
+    width: 225px;
+    height: 225px;
    
 }
 table {
   border-collapse: separate;
   border-spacing: 50px 0;
 }
-
+#tabela {
+    margin-top: 260px;;
+}
 table {
   border-collapse: separate;
   border-spacing: 74px 74px;
@@ -235,7 +245,7 @@ table {
 }
 
 #usluge {
-    margin-top: 50px;
+  margin-top: 115px;
 }
 
 #tetovaze {
@@ -303,27 +313,44 @@ padding-top: 8px;
 margin: auto;
 }
 
+.click-box-artist {
+background: #DB192D;
+width: 60px;
+height: 30px;
+padding-top: 8px;
+margin: auto;
+margin-top:25px;
+}
+
 .margins {
     margin-top: 15px;
     margin-bottom: 30px;
 }
 
-.display-none {
-    display: none;
-}
 
-#pirs , #teto , #skol , #traj , #sola , #smin , #dlak , #svil{
+#pirs , #teto , #skol , #traj , #sola , #smin , #dlak , #svil {
     position: absolute;
     top: 300px;
     right: 0;
     left: 0;
     margin: auto;
     display:none;
-    
+}
+#stefan , #danilo , #jelena  {
+    margin: auto;
+    display:none;
+    position: absolute;
+    margin-top: 180px;
 }
 
 .under-hidden {
     margin-top: 20px;
+    
+}
+
+.under-hidden1 {
+    margin-top: 40px;
+    
 }
 
 .back {
@@ -334,4 +361,74 @@ margin: auto;
 
 .undertitle {
     margin-top: 18px;
+}
+
+#umetnici {
+    margin-top: 80px;
+    
+}
+
+#artists {
+    clear: both;
+}
+
+
+.umetnost {
+    width: 300px;
+    margin-top: 40px;
+}
+.umetnosti {
+    width: 200px;
+    margin-top: 40px;
+}
+
+.under-artist {
+    margin-top:10px;
+}
+.margin-little {
+    margin-top: 30px;
+}
+
+#stefan-image {
+    width: 200px;
+}
+
+.umetnosti:hover { 
+    cursor:  url('../images/zoom.png') 25 25, auto;
+    opacity: 0.4;
+}
+
+.umetnosti-click {
+    width: 100vh;
+    height: 100vh;
+    z-index: 1005;
+    margin-top: 0;
+}
+
+#utisci {
+    margin-top: 60px;
+}
+
+#commas::before {
+      content: url('../images/before.png');
+}
+
+#mapa {
+    margin-top:20px; 
+    height: 650px;
+    bottom: 0;
+}
+
+
+#logo {
+    width: 120px;
+    margin-top: 20px;
+}
+
+#locat {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 990px) {
+
 }
