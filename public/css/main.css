@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Font1;
     src:url('/fonts/Oswald-Bold.woff') format('woff')
@@ -23,7 +24,7 @@ body {
     background: url('../images/header.jpg') no-repeat;
     overflow: hidden;
     background-attachment: fixed;
-    background-position: center;
+    background-position:100% 0%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -219,6 +220,7 @@ border-right: 0.5px solid lightgrey;
     font-family: Font2;
 }
 
+
 .margin-about {
     margin-top: 10px;
 }
@@ -233,7 +235,7 @@ table {
   border-spacing: 50px 0;
 }
 #tabela {
-    margin-top: 260px;;
+    margin-top: 260px;
 }
 table {
   border-collapse: separate;
@@ -406,7 +408,7 @@ margin-top:25px;
 }
 
 #utisci {
-    margin-top: 60px;
+    margin-top: 90px;
 }
 
 #commas::before {
@@ -421,7 +423,7 @@ margin-top:25px;
 
 
 #logo {
-    width: 120px;
+    width: 100px;
     margin-top: 20px;
 }
 
@@ -429,6 +431,79 @@ margin-top:25px;
     margin-top: 100px;
 }
 
+
+#logom {
+    width: 400px;
+    margin-top: 0px;
+}
+
 @media screen and (max-width: 990px) {
+      #artists  { 
+  height: 1900px;
+}
+#language-font {
+    font-size: 30px;
+}
+#navbar , #social-icons {
+    display: none;
+}
+h5 {
+    font-size: 20px;
+}
+
+#language-oposite {
+    font-size: 30px;
+     padding-top: 24px;
+     padding-left: 30px;
+     display:inline-block ;
+}
+.language-frame::after {
+    content: '';
+    border: 6px solid #DB192D;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-left: -80px;
+    margin-bottom: -31px;
+}
+
+.center-info-box {
+border-right:0;
+      border-left:0;
+      border-top: 0.5px solid lightgrey;
+}
+    .right-info-box {
+      border-top: 0.5px solid lightgrey;
+}
+#logo {
+    display: none;
+}
+#logom {
+    width: 600px;
+    margin-top: 200px;
+}
+#services {
+    height: 1200px;
+}
+#testimontials {
+    height: 700px;
+}
+
+#tabela {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.teto-m-bottom {
+    margin-bottom: 50px;
+}
 
 }
+
+
